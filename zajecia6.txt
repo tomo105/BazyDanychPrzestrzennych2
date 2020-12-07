@@ -1,0 +1,33 @@
+zad.5 Uruchom następujące zestawy instrukcji za każdym razem obserwując tabelę scd_dimemp oraz stg_dimemp
+przed uruchomieniem procesu, działanie procesu, dane w tabeli scd_dimemp po uruchomieniu procesu:
+a) Uruchomienie procesu SSIS,
+
+Type 1 – (nadpisz)
+
+b) Wykonanie poniższych kwerend, a następnie uruchomienie procesu SSIS:
+update STG_DimEmp
+set LastName = 'Nowak'
+where EmployeeKey = 270;
+update STG_DimEmp
+set TITLE = 'Senior Design Engineer'
+where EmployeeKey = 274;
+
+Type 2 – (dodaj wiersz)
+
+c) Wykonanie poniższej kwerendy, a następnie uruchomienie procesu SSIS:
+update STG_DimEmp
+set FIRSTNAME = 'Ryszard'
+where EmployeeKey = 275
+
+Type 0 
+
+zad.7
+ Jakie ustawienie i dlaczego miało wpływ na działanie procesu w przypadku kwerendy 5c?
+
+ustawienie Fixed attributes (aby proces zadziałał trzeba było odznaczyć 
+fail the transformation if changes are detected in a fixed attributes)
+ gdyż w kwerendzie 5c zmienialismy dane w kolumnie, która
+jest ustawiona na ten typ i po prostu nic sie nie powinno zmieniac w tej kolumnie
+(a wykonana kwerenda wprowadzała błąd, bo próbowaliśmy zmienić dane w tej kolumnie) 
+
+
