@@ -1,0 +1,24 @@
+20210123151924 - Downloading file - Succesful
+20210123151924 - Extracting file - Succesful
+		Downloaded File has: 10008 lines
+20210123151924 - Removing empty lines from file - Succesful
+		Dowloaded file has: 0 empty lines
+20210123151924 - Removing lines with wrong number of columns from file - Succesful
+		Downloaded file has: 10 wrong length rows
+20210123151924 - Removing duplicated lines from file - Succesful
+		Downloaded file has: 10 duplicated lines
+20210123151924 - Removing wrong quantity values from file - Succesful
+		Dowloaded file has: 6 bad OrderQuality lines
+20210123151924 -Removing lines which we already have in our file - Succesful
+		Dowloaded file has 7 common lines with  our file
+20210123151925 - Removing lines which have data in securecode column in file - Succesful
+		Dowloaded file has 13 lines with securecode column not empty
+20210123151925 - Removing wrong name and surname field which do not have comma - Succesful
+		Dowloaded file has 10 lines without comma between name and surname
+20210123151925 - Splitting column Customer_name to first and last name  - Succesful
+20210123151925 - Creating table in db - Succesful
+20210123151926 - Inserting data to db table - Succesful
+20210123151926 - Updatind table  - Succesful
+20210123151927 - Exporting table to .csv file  - Succesful
+20210123151927 - Zipping .csv file - Succesful
+20210123151927 - Sending mail - Succesful
