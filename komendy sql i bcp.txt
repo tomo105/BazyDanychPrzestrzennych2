@@ -3,5 +3,5 @@ CREATE TABLE CUSTOMERS_290926(ProductKey INTEGER, CurrencyAlternateKey VARCHAR(4
 OrderQuantity VARCHAR(40),UnitPrice FLOAT,SecretCode VARCHAR (40) );
 
 KOMENDY BCP:
-bcp  AdventureWorksDW2019.dbo.CUSTOMERS_290926 format nul -T -t, -c -f  res.fmt      
+bcp  AdventureWorksDW2019.dbo.CUSTOMERS_290926 format nul -T -t, -c -f  result.fmt      
 bcp  AdventureWorksDW2019.dbo.CUSTOMERS_290926 in C:\Users\Tomek\Desktop\cos\CUSTOMERS_290926.csv  -S DESKTOP-0QVE0P7  -U DESKTOP-0QVE0P7\Tomek   -t"," -T  -f result.fmt
